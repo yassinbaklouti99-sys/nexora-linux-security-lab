@@ -1,0 +1,19 @@
+NEXORA | SECURITY VALIDATION
+25 November 2026
+
+DEPARTMENT DIRECTORY ACCESS
+User         IT       HR       Finance  Security
+it01         Allowed  Denied   Denied   Denied
+hr01         Denied   Allowed  Denied   Denied
+finance01    Denied   Denied   Allowed  Denied
+security01   Denied   Denied   Denied   Allowed
+16/16 expected directory-access outcomes observed. These tests cover directory traversal and listing, not every possible file operation.
+
+BACKUP AND RECOVERY
+Four backup files visible in inventory. Network file content comparison is screenshot-supported; remaining comparisons and post-recovery content match were user-confirmed. Budget source and backup are empty placeholders. Restored network.txt shows owner it01, group it, mode 640 and 76 bytes.
+
+LIMITATIONS
+Educational lab only. Ubuntu 20.04 is outside standard support. The sample network document lists gateway 192.18.1.1 outside its stated 192.168.1.0/24 subnet; actual VM IPv4 is 10.0.2.15/24. Do not treat the sample document as verified live configuration.
+
+EVIDENCE HANDLING
+Selected screenshots are cropped excerpts, not altered terminal output. Expected access denials are retained. Some typing errors remain where they occur within a test sequence. Originals supplied by the author.
